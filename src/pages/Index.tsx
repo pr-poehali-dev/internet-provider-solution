@@ -303,61 +303,7 @@ export default function Index() {
         </div>
       </section>
 
-      {/* SUPPORT */}
-      <section id="support" className="py-20 px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="mb-14">
-            <span className="font-mono-brand text-xs tracking-widest text-[hsl(var(--brand-accent))] uppercase mb-3 block">
-              Помощь
-            </span>
-            <h2 className="text-4xl font-black tracking-tight">Поддержка</h2>
-          </div>
 
-          <div className="grid md:grid-cols-2 gap-16">
-            <div className="flex flex-col gap-4">
-              {[
-                { icon: "Phone", label: "Горячая линия", value: "8-800-000-00-00", note: "Звонок бесплатный, 24/7" },
-                { icon: "MessageSquare", label: "Онлайн-чат", value: "Написать в чат", note: "Среднее время ответа — 3 мин" },
-                { icon: "Mail", label: "Электронная почта", value: "help@volnanet.ru", note: "Ответ в течение 1 рабочего дня" },
-              ].map((c, i) => (
-                <div key={i} className="flex items-start gap-4 p-6 bg-white border border-[hsl(var(--border))]">
-                  <div className="w-10 h-10 flex items-center justify-center border border-[hsl(var(--border))] shrink-0">
-                    <Icon name={c.icon} size={18} />
-                  </div>
-                  <div>
-                    <p className="text-xs text-[hsl(var(--muted-foreground))] mb-0.5">{c.label}</p>
-                    <p className="font-semibold text-[hsl(var(--brand))]">{c.value}</p>
-                    <p className="text-xs text-[hsl(var(--muted-foreground))] mt-0.5">{c.note}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <div className="flex flex-col gap-0 divide-y divide-[hsl(var(--border))]">
-              {FAQ.map((item, i) => (
-                <div key={i}>
-                  <button
-                    className="w-full flex items-start justify-between gap-4 py-5 text-left"
-                    onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                  >
-                    <span className="font-medium text-sm leading-snug">{item.q}</span>
-                    <Icon
-                      name={openFaq === i ? "Minus" : "Plus"}
-                      size={16}
-                      className="shrink-0 mt-0.5 text-[hsl(var(--muted-foreground))]"
-                    />
-                  </button>
-                  {openFaq === i && (
-                    <p className="text-sm text-[hsl(var(--muted-foreground))] leading-relaxed pb-5">
-                      {item.a}
-                    </p>
-                  )}
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* CTA */}
       <section className="py-20 px-6 bg-[hsl(var(--brand))]">
