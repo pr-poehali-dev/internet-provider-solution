@@ -239,7 +239,7 @@ export default function Index() {
               </a>
             ))}
           </nav>
-          <span className="text-xs text-[hsl(var(--muted-foreground))]">© 2026 ВолнаНет</span>
+          <span className="text-xs text-[hsl(var(--muted-foreground))]">© 2026 ARDIVSIMF</span>
         </div>
       </footer>
     </div>
