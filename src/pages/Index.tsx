@@ -254,54 +254,7 @@ export default function Index() {
         </div>
       </section>
 
-      {/* PRICING */}
-      <section id="pricing" className="py-20 px-6 bg-[hsl(0,0%,97%)]">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-6">
-            {PLANS.map((plan, i) => (
-              <div
-                key={i}
-                className={`flex flex-col p-8 border ${
-                  plan.accent
-                    ? "bg-[hsl(var(--brand))] text-white border-[hsl(var(--brand))]"
-                    : "bg-white border-[hsl(var(--border))]"
-                }`}
-              >
-                <h3 className="text-2xl font-black mb-1">{plan.name}</h3>
-                <div className="flex items-baseline gap-1 mb-1">
-                  <span className="text-5xl font-black">{plan.speed}</span>
-                  <span className={`text-sm ${plan.accent ? "text-white/70" : "text-[hsl(var(--muted-foreground))]"}`}>Мбит/с</span>
-                </div>
-                <div className="flex items-baseline gap-1 mb-8">
-                  <span className="text-3xl font-bold">{plan.price} ₽</span>
-                  <span className={`text-sm ${plan.accent ? "text-white/70" : "text-[hsl(var(--muted-foreground))]"}`}>/мес</span>
-                </div>
 
-                <ul className="flex flex-col gap-3 mb-8 flex-1">
-                  {plan.features.map((f, fi) => (
-                    <li key={fi} className="flex items-start gap-2.5 text-sm">
-                      <Icon
-                        name="Check"
-                        size={14}
-                        className={`mt-0.5 shrink-0 ${plan.accent ? "text-[hsl(var(--brand-accent))]" : "text-[hsl(var(--brand))]"}`}
-                      />
-                      <span className={plan.accent ? "text-white/85" : "text-[hsl(var(--muted-foreground))]"}>{f}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                <button
-                  className={`w-full py-3.5 text-sm font-semibold transition-colors ${
-                    plan.accent
-                      ? "bg-white text-[hsl(var(--brand))] hover:bg-white/90"
-                      : "border border-[hsl(var(--brand))] text-[hsl(var(--brand))] hover:bg-[hsl(var(--brand-light))]"
-                  }`}
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
 
 
