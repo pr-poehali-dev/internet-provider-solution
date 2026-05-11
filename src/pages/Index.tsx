@@ -200,7 +200,7 @@ export default function Index() {
       <section className="py-20 px-6 bg-[hsl(var(--brand))]">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
           <div>
-            <h2 className="text-3xl font-black text-white mb-2">Готовы подключиться?</h2>
+            <h2 className="text-3xl font-black text-white mb-2">Оформить заявку на подключение</h2>
             <p className="text-white/70 text-sm">Оставьте заявку — мастер приедет в удобное время</p>
           </div>
           <a
