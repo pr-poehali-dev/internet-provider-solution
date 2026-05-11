@@ -138,8 +138,33 @@ export default function Index() {
         )}
       </nav>
 
+      {/* PROMO BANNER */}
+      <section className="pt-16">
+        <div className="relative w-full overflow-hidden" style={{ maxHeight: '520px' }}>
+          <img
+            src="https://cdn.poehali.dev/projects/cbfbf5f5-eecf-4afe-ba23-25fa47648f72/bucket/8900b1a9-f703-4605-8e1f-5c2efa5f1694.jpg"
+            alt="Оформи заявку на подключение дома или МКД и получи 1 месяц бесплатного интернета"
+            className="w-full object-cover object-center"
+            style={{ maxHeight: '520px' }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/25 to-transparent" />
+          <div className="absolute inset-0 flex flex-col justify-center px-10 md:px-16">
+            <p className="text-white text-3xl md:text-5xl font-black leading-tight max-w-2xl drop-shadow-lg">
+              Оформи заявку на подключение дома или МКД и получи 1 месяц бесплатного интернета
+            </p>
+            <a
+              href="#pricing"
+              className="mt-8 self-start inline-flex items-center gap-2 bg-white text-[hsl(var(--brand))] font-semibold px-7 py-3.5 hover:bg-white/90 transition-colors"
+            >
+              Оформить заявку
+              <Icon name="ArrowRight" size={16} />
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* HERO */}
-      <section className="pt-32 pb-24 px-6 max-w-6xl mx-auto">
+      <section className="pt-16 pb-24 px-6 max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div>
             <span className="font-mono-brand text-xs tracking-widest text-[hsl(var(--brand-accent))] uppercase mb-6 block animate-fade-in">
