@@ -239,20 +239,7 @@ export default function Index() {
         <div className="mt-24 h-px bg-[hsl(var(--border))]" />
       </section>
 
-      {/* SERVICES */}
-      <section id="services" className="py-20 px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-px bg-[hsl(var(--border))]">
-            {SERVICES.map((s, i) => (
-              <div key={i} className="bg-white p-8 flex items-center justify-center group hover:bg-[hsl(var(--brand-light))] transition-colors min-h-[120px]">
-                <div className="w-10 h-10 flex items-center justify-center border border-[hsl(var(--border))] group-hover:border-[hsl(var(--brand))] transition-colors">
-                  <Icon name={s.icon} size={18} />
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
 
 
