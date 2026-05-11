@@ -188,56 +188,7 @@ export default function Index() {
         </div>
       </section>
 
-      {/* HERO */}
-      <section className="pt-16 pb-24 px-6 max-w-6xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
-          <div>
-            <span className="font-mono-brand text-xs tracking-widest text-[hsl(var(--brand-accent))] uppercase mb-6 block animate-fade-in">
-              Интернет-провайдер
-            </span>
-            <h1 className="text-5xl md:text-6xl font-black leading-[1.05] tracking-tight mb-6 animate-fade-in-up delay-100">
-              Интернет,<br />
-              которому<br />
-              <span className="text-[hsl(var(--brand))]">доверяют</span>
-            </h1>
-            <p className="text-lg text-[hsl(var(--muted-foreground))] leading-relaxed mb-10 animate-fade-in-up delay-200">
-              Оптоволокно, 5G и ADSL — выберите технологию,
-              подходящую именно вашему дому или офису.
-            </p>
-            <div className="flex flex-wrap gap-3 animate-fade-in-up delay-300">
-              <a
-                href="#pricing"
-                className="inline-flex items-center gap-2 bg-[hsl(var(--brand))] text-white font-semibold px-7 py-3.5 hover:bg-[hsl(216,80%,18%)] transition-colors"
-              >
-                Выбрать тариф
-                <Icon name="ArrowRight" size={16} />
-              </a>
-              <a
-                href="#services"
-                className="inline-flex items-center gap-2 border border-[hsl(var(--border))] text-[hsl(var(--foreground))] font-medium px-7 py-3.5 hover:border-[hsl(var(--brand))] transition-colors"
-              >
-                Узнать больше
-              </a>
-            </div>
-          </div>
 
-          <div className="grid grid-cols-2 gap-px bg-[hsl(var(--border))] animate-fade-in-up delay-400">
-            {[
-              { num: "15+", label: "лет на рынке" },
-              { num: "120К", label: "абонентов" },
-              { num: "99.9%", label: "uptime сети" },
-              { num: "24/7", label: "поддержка" },
-            ].map((stat) => (
-              <div key={stat.num} className="bg-white p-8 flex flex-col gap-1">
-                <span className="text-3xl font-black text-[hsl(var(--brand))]">{stat.num}</span>
-                <span className="text-sm text-[hsl(var(--muted-foreground))]">{stat.label}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="mt-24 h-px bg-[hsl(var(--border))]" />
-      </section>
 
 
 
