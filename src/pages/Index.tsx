@@ -88,7 +88,10 @@ export default function Index() {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-sm border-b border-[hsl(var(--border))]">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           <a href="#" className="flex items-center gap-2">
-            <span className="font-mono-brand text-xs font-medium text-[hsl(var(--brand-accent))] tracking-widest uppercase">ВолнаНет</span>
+            <div className="flex flex-col leading-none">
+              <span className="font-mono-brand text-sm font-bold text-[hsl(var(--brand))] tracking-widest uppercase">ARDIVSIMF</span>
+              <span className="font-mono-brand text-[10px] text-[hsl(var(--muted-foreground))] tracking-widest uppercase">Интернет-Провайдер</span>
+            </div>
           </a>
 
           <div className="hidden md:flex items-center gap-8">
@@ -376,9 +379,10 @@ export default function Index() {
       {/* FOOTER */}
       <footer className="py-10 px-6 border-t border-[hsl(var(--border))]">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-          <span className="font-mono-brand text-xs tracking-widest text-[hsl(var(--brand-accent))] uppercase">
-            ВолнаНет
-          </span>
+          <div className="flex flex-col leading-none">
+            <span className="font-mono-brand text-sm font-bold text-[hsl(var(--brand))] tracking-widest uppercase">ARDIVSIMF</span>
+            <span className="font-mono-brand text-[10px] text-[hsl(var(--muted-foreground))] tracking-widest uppercase">Интернет-Провайдер</span>
+          </div>
           <nav className="flex gap-6">
             {NAV_ITEMS.map((item) => (
               <a
