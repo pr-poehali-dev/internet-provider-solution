@@ -238,13 +238,6 @@ export default function Index() {
       {/* PRICING */}
       <section id="pricing" className="py-20 px-6 bg-[hsl(0,0%,97%)]">
         <div className="max-w-6xl mx-auto">
-          <div className="mb-14">
-            <span className="font-mono-brand text-xs tracking-widest text-[hsl(var(--brand-accent))] uppercase mb-3 block">
-              Стоимость
-            </span>
-            <h2 className="text-4xl font-black tracking-tight">Тарифы</h2>
-          </div>
-
           <div className="grid md:grid-cols-3 gap-6">
             {PLANS.map((plan, i) => (
               <div
@@ -255,16 +248,6 @@ export default function Index() {
                     : "bg-white border-[hsl(var(--border))]"
                 }`}
               >
-                {plan.accent && (
-                  <span className="font-mono-brand text-[10px] tracking-widest text-[hsl(var(--brand-accent))] uppercase mb-4 inline-block bg-white/10 px-2 py-1 self-start">
-                    Популярный
-                  </span>
-                )}
-                <div className="mb-2">
-                  <span className={`font-mono-brand text-xs tracking-widest uppercase ${plan.accent ? "text-white/60" : "text-[hsl(var(--muted-foreground))]"}`}>
-                    {plan.tech}
-                  </span>
-                </div>
                 <h3 className="text-2xl font-black mb-1">{plan.name}</h3>
                 <div className="flex items-baseline gap-1 mb-1">
                   <span className="text-5xl font-black">{plan.speed}</span>
@@ -294,9 +277,7 @@ export default function Index() {
                       ? "bg-white text-[hsl(var(--brand))] hover:bg-white/90"
                       : "border border-[hsl(var(--brand))] text-[hsl(var(--brand))] hover:bg-[hsl(var(--brand-light))]"
                   }`}
-                >
-                  Подключить
-                </button>
+                />
               </div>
             ))}
           </div>
