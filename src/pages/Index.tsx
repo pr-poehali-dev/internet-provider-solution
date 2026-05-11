@@ -154,6 +154,40 @@ export default function Index() {
         </div>
       </section>
 
+      {/* QUICK ACTIONS */}
+      <section className="py-6 px-6 border-b border-[hsl(var(--border))] bg-white">
+        <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-3">
+          <a
+            href="#"
+            className="flex flex-col items-center gap-2 py-5 px-4 border border-[hsl(var(--border))] hover:border-[hsl(var(--brand))] hover:bg-[hsl(var(--brand-light))] transition-colors group"
+          >
+            <Icon name="CreditCard" size={22} className="text-[hsl(var(--brand))]" />
+            <span className="text-sm font-semibold text-center">Оплата</span>
+          </a>
+          <a
+            href="#"
+            className="flex flex-col items-center gap-2 py-5 px-4 border border-[hsl(var(--border))] hover:border-[hsl(var(--brand))] hover:bg-[hsl(var(--brand-light))] transition-colors group"
+          >
+            <Icon name="Send" size={22} className="text-[hsl(var(--brand))]" />
+            <span className="text-sm font-semibold text-center">Телеграм канал</span>
+          </a>
+          <a
+            href="tel:88000000000"
+            className="flex flex-col items-center gap-2 py-5 px-4 border border-[hsl(var(--border))] hover:border-[hsl(var(--brand))] hover:bg-[hsl(var(--brand-light))] transition-colors group"
+          >
+            <Icon name="Phone" size={22} className="text-[hsl(var(--brand))]" />
+            <span className="text-sm font-semibold text-center">Позвонить</span>
+          </a>
+          <a
+            href="#support"
+            className="flex flex-col items-center gap-2 py-5 px-4 border border-[hsl(var(--brand))] bg-[hsl(var(--brand))] hover:bg-[hsl(216,80%,18%)] transition-colors group"
+          >
+            <Icon name="Headphones" size={22} className="text-white" />
+            <span className="text-sm font-semibold text-center text-white">Тех. поддержка</span>
+          </a>
+        </div>
+      </section>
+
       {/* HERO */}
       <section className="pt-16 pb-24 px-6 max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-16 items-center">
