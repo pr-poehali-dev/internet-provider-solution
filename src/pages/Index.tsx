@@ -207,7 +207,7 @@ export default function Index() {
             href="#pricing"
             className="inline-flex items-center gap-2 bg-white text-[hsl(var(--brand))] font-semibold px-8 py-4 hover:bg-white/90 transition-colors whitespace-nowrap"
           >
-            Выбрать тариф
+            Оставить заявку
             <Icon name="ArrowRight" size={16} />
           </a>
         </div>
