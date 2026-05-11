@@ -147,19 +147,7 @@ export default function Index() {
             className="w-full object-cover object-center"
             style={{ maxHeight: '520px' }}
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/25 to-transparent" />
-          <div className="absolute inset-0 flex flex-col justify-center px-10 md:px-16">
-            <p className="text-white text-3xl md:text-5xl font-black leading-tight max-w-2xl drop-shadow-lg">
-              Оформи заявку на подключение дома или МКД и получи 1 месяц бесплатного интернета
-            </p>
-            <a
-              href="#pricing"
-              className="mt-8 self-start inline-flex items-center gap-2 bg-white text-[hsl(var(--brand))] font-semibold px-7 py-3.5 hover:bg-white/90 transition-colors"
-            >
-              Оформить заявку
-              <Icon name="ArrowRight" size={16} />
-            </a>
-          </div>
+
         </div>
       </section>
 
