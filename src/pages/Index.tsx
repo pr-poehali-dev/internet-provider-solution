@@ -158,28 +158,34 @@ export default function Index() {
       <section className="py-6 px-6 border-b border-[hsl(var(--border))] bg-white">
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-3">
           <a
-            href="#"
+            href="https://www.vtb.ru/personal/platezhi-i-perevody/perevod-po-nomeru-telefona/?phone=79150983727"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex flex-col items-center gap-2 py-5 px-4 border border-[hsl(var(--border))] hover:border-[hsl(var(--brand))] hover:bg-[hsl(var(--brand-light))] transition-colors group"
           >
             <Icon name="CreditCard" size={22} className="text-[hsl(var(--brand))]" />
             <span className="text-sm font-semibold text-center">Оплата</span>
           </a>
           <a
-            href="#"
+            href="https://t.me/ardivsimf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex flex-col items-center gap-2 py-5 px-4 border border-[hsl(var(--border))] hover:border-[hsl(var(--brand))] hover:bg-[hsl(var(--brand-light))] transition-colors group"
           >
             <Icon name="Send" size={22} className="text-[hsl(var(--brand))]" />
             <span className="text-sm font-semibold text-center">Телеграм канал</span>
           </a>
           <a
-            href="tel:88000000000"
+            href="tel:+79150983727"
             className="flex flex-col items-center gap-2 py-5 px-4 border border-[hsl(var(--border))] hover:border-[hsl(var(--brand))] hover:bg-[hsl(var(--brand-light))] transition-colors group"
           >
             <Icon name="Phone" size={22} className="text-[hsl(var(--brand))]" />
             <span className="text-sm font-semibold text-center">Позвонить</span>
           </a>
           <a
-            href="#support"
+            href="https://t.me/texpodsimf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex flex-col items-center gap-2 py-5 px-4 border border-[hsl(var(--brand))] bg-[hsl(var(--brand))] hover:bg-[hsl(216,80%,18%)] transition-colors group"
           >
             <Icon name="Headphones" size={22} className="text-white" />
@@ -204,7 +210,9 @@ export default function Index() {
             <p className="text-white/70 text-sm">Оставьте заявку — мастер приедет в удобное время</p>
           </div>
           <a
-            href="#pricing"
+            href="https://t.me/SSR_90XX"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-white text-[hsl(var(--brand))] font-semibold px-8 py-4 hover:bg-white/90 transition-colors whitespace-nowrap"
           >
             Оставить заявку
