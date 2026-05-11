@@ -242,26 +242,11 @@ export default function Index() {
       {/* SERVICES */}
       <section id="services" className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="mb-14">
-            <span className="font-mono-brand text-xs tracking-widest text-[hsl(var(--brand-accent))] uppercase mb-3 block">
-              Технологии
-            </span>
-            <h2 className="text-4xl font-black tracking-tight">Наши услуги</h2>
-          </div>
-
           <div className="grid md:grid-cols-3 gap-px bg-[hsl(var(--border))]">
             {SERVICES.map((s, i) => (
-              <div key={i} className="bg-white p-8 flex flex-col gap-4 group hover:bg-[hsl(var(--brand-light))] transition-colors">
+              <div key={i} className="bg-white p-8 flex items-center justify-center group hover:bg-[hsl(var(--brand-light))] transition-colors min-h-[120px]">
                 <div className="w-10 h-10 flex items-center justify-center border border-[hsl(var(--border))] group-hover:border-[hsl(var(--brand))] transition-colors">
                   <Icon name={s.icon} size={18} />
-                </div>
-                <span className="font-mono-brand text-[10px] tracking-widest text-[hsl(var(--brand-accent))] uppercase">
-                  {s.tag}
-                </span>
-                <h3 className="text-xl font-bold leading-tight">{s.title}</h3>
-                <p className="text-sm text-[hsl(var(--muted-foreground))] leading-relaxed flex-1">{s.desc}</p>
-                <div className="pt-4 border-t border-[hsl(var(--border))]">
-                  <span className="font-mono-brand text-sm font-medium text-[hsl(var(--brand))]">{s.speed}</span>
                 </div>
               </div>
             ))}
